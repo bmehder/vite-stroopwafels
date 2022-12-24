@@ -34,6 +34,6 @@ body {
 
 #tabs {
   max-width: 600px;
-  border: 1px solid tomato;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24);
 }
 
