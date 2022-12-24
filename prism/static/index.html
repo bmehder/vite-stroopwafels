@@ -43,10 +43,29 @@
 }))`,
         },
       })
+
+      new Prism({
+        target: document.querySelector('#php'),
+        props: {
+          code: `<?php 
+  
+function startsWith($string, $startString) { 
+  $len = strlen($startString); 
+  return (substr($string, 0, $len) === $startString); 
+} 
+
+// usage
+echo startsWith("cat", "c"); // true
+echo startsWith("dog", "x"); // false
+
+?> `,
+        },
+      })
     </script>
   </head>
 
   <body>
     <div id="prism"></div>
+    <div id="php"></div>
   </body>
 </html>
